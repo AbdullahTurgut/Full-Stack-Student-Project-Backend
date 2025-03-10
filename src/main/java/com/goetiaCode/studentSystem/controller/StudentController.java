@@ -9,10 +9,12 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/student")
+@CrossOrigin //frontend den ekleme yaparken CORS error aldık.
 public class StudentController {
 
     @Autowired
     private StudentService studentService;
+
 
 
     @PostMapping("/add")
